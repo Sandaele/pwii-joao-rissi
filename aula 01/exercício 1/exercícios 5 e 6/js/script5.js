@@ -1,8 +1,11 @@
 /**
- * exercício 5: comparação de desempénho entre atletas (da lista de exercícios 1)
+ * exercício 5: comparação de desempenho entre atletas
  * autor: João Rissi
- * data: 06-08-2024
+ * data da ultima alteração: 13-08-2024
  */
+
+// 1. qual atleta atinge a maior distancia?
+// 2. qual é essa distancia maxima para cada atleta?
 
 // criando as variaveis
 let AtletaA
@@ -17,11 +20,16 @@ function funcDistancia (a,b,c) {
     return distancia
 }
 
-// inserindo as informações e calculando
-AtletaA = funcDistancia(-1, 6, 10)
-AtletaB = funcDistancia(-0.5, 4, 12)
+// inserindo os valores e calculando
+AtletaA = funcDistancia(-1, 6, 10) // 19 metros
+AtletaB = funcDistancia(-0.5, 4, 12) // 20 metros
 
-// o resultado: distancia maxima de cada atrleta
-console.log(AtletaA) // 19 metros
-console.log(AtletaB) // 20 metros
-// atleta B antige a maior distancia com 20 metros
+// comparando qual atleta atingiu a maior distancia
+if (AtletaA > AtletaB) {
+    console.log("o atleta A atinge a maior distancia com ", AtletaA, " metros") // 19 metros
+} else if (AtletaA < AtletaB) {
+    console.log("o atleta B atinge a maior distancia com ", AtletaB, " metros") // 20 metros
+} else {
+    console.log("a distancia dos atletas é igual") // caso os valores mudem
+}
+// atleta B atinge a maior distancia com 20 metros
